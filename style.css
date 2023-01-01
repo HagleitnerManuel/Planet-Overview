@@ -5,6 +5,7 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #nav {
+    margin-bottom: 20rem;
     float:left;
     width: 100%;
     background: linear-gradient(0deg, rgba(0,212,255,0.6) 0%, rgba(9,9,121,0.6) 35%, rgba(2,0,36,0.8) 100%);
@@ -19,7 +20,7 @@ h1.navigation{
     margin-top: 6rem;
     margin-left: 3rem;
 }
-h1#Mercury{
+h1#Mercury , h1#Venus, h1#Earth, h1#Mars, h1#Jupiter{
     margin-top: 6rem;
 }
 ul.flex-container{
@@ -55,6 +56,8 @@ a{
 a:visited{
     color: white;
 }
-table{
+table, td, th{
     margin-top: 4rem;
+    width: 70rem;
+    border: 0.1rem solid black;
 }
