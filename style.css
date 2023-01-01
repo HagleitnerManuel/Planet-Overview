@@ -2,13 +2,59 @@ body{
     background-image: url('Astrophoto_wo_foreground_interest.jpg');
     background-size:auto;
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #nav {
     float:left;
-    margin-right: 1%;
     width: 100%;
     background: linear-gradient(0deg, rgba(0,212,255,0.6) 0%, rgba(9,9,121,0.6) 35%, rgba(2,0,36,0.8) 100%);
 }
-h1{
-    margin-left: 2rem;
+#content {
+    float: right;
+    width: 90%;
+    height: 100%;
+    overflow-y: auto;
+}
+h1.navigation{
+    margin-top: 6rem;
+    margin-left: 3rem;
+}
+h1#Mercury{
+    margin-top: 6rem;
+}
+ul.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+section.navigationBox, ul{
+    list-style: none;
+}
+li{
+    margin-left: 0.5rem;
+}
+a.navigationBox:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5%;
+}
+p.goToStart{
+    float: right;
+    margin-right: 5rem;
+    font-weight: bold;
+    font-size: x-large;
+}
+p{
+    font-size: larger;
+    margin-top: 3rem;
+    max-width: 50rem;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+table{
+    margin-top: 4rem;
 }
