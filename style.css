@@ -20,7 +20,7 @@ h1.navigation{
     margin-top: 6rem;
     margin-left: 3rem;
 }
-h1#Mercury , h1#Venus, h1#Earth, h1#Mars, h1#Jupiter, h1#Saturn, h1#Uranus, h1#Neptune  {
+h2#Mercury , h2#Venus, h2#Earth, h2#Mars, h2#Jupiter, h2#Saturn, h2#Uranus, h2#Neptune  {
     margin-top: 6rem;
 }
 ul.flex-container{
@@ -56,10 +56,7 @@ a.navigationBox{
 a.navigationBox:visited{
     color: inherit;
 }
-a.wikiMercury{
-    color: gray;
-}
-a.wikiMercury:visited{
+a.wiki, a.wiki:visited , a.wiki:active{
     color: gray;
 }
 table, td, th{
