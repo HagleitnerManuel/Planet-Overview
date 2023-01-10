@@ -3,12 +3,13 @@ body{
     background-size:auto;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 #nav {
     margin-bottom: 20rem;
     float:left;
     width: 100%;
-    background: linear-gradient(0deg, rgba(0,212,255,0.6) 0%, rgba(9,9,121,0.6) 35%, rgba(2,0,36,0.8) 100%);
+    
 }
 #content {
     float: right;
@@ -18,7 +19,9 @@ body{
 }
 h1.navigation{
     margin-top: 6rem;
-    margin-left: 3rem;
+    margin-left: 35rem;
+    margin-bottom: 4rem;
+    font-size: xx-large;
 }
 h2#Mercury , h2#Venus, h2#Earth, h2#Mars, h2#Jupiter, h2#Saturn, h2#Uranus, h2#Neptune  {
     margin-top: 6rem;
@@ -34,16 +37,25 @@ section.navigationBox, ul{
 li{
     margin-left: 0.5rem;
 }
-a.navigationBox:hover{
-    background-color: lightskyblue;
-    color: black;
-    border-radius: 5%;
+img {
+    transition: transform .2s; /* Enable transition on hover */
+    width: 200px; /* Set the initial width of the image */
+}
+
+img:hover {
+    transform: scale(1.5); /* Scale the image to 150% of its original size */
 }
 p.goToStart{
     float: right;
     margin-right: 5rem;
     font-weight: bold;
     font-size: x-large;
+    transition: transform .2s; 
+    width: 200px; 
+}
+p.goToStart:hover{
+
+    transform: scale(1.2); 
 }
 p{
     font-size: larger;
