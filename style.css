@@ -7,9 +7,11 @@ body{
 }
 #nav {
     margin-bottom: 20rem;
-    float:left;
     width: 100%;
     
+}
+li#Uranus, li#Neptune{
+    margin-left: 15rem;
 }
 #content {
     float: right;
@@ -19,9 +21,9 @@ body{
 }
 h1.navigation{
     margin-top: 6rem;
-    margin-left: 35rem;
+    margin-left: 25rem;
     margin-bottom: 4rem;
-    font-size: xx-large;
+    font-size: 5rem;
 }
 h2#Mercury , h2#Venus, h2#Earth, h2#Mars, h2#Jupiter, h2#Saturn, h2#Uranus, h2#Neptune  {
     margin-top: 6rem;
@@ -37,13 +39,16 @@ section.navigationBox, ul{
 li{
     margin-left: 0.5rem;
 }
+li.Uranus, li.Neptune{
+    align-content: center;
+}
 img {
-    transition: transform .2s; /* Enable transition on hover */
-    width: 200px; /* Set the initial width of the image */
+    transition: transform .2s;
+    width: 200px; 
 }
 
 img:hover {
-    transform: scale(1.5); /* Scale the image to 150% of its original size */
+    transform: scale(1.5); 
 }
 p.goToStart{
     float: right;
@@ -56,6 +61,9 @@ p.goToStart{
 p.goToStart:hover{
 
     transform: scale(1.2); 
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 p{
     font-size: larger;
@@ -69,10 +77,22 @@ a.navigationBox:visited{
     color: inherit;
 }
 a.wiki, a.wiki:visited , a.wiki:active{
-    color: gray;
+    color: rgb(107, 165, 155);
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 table, td, th{
     margin-top: 4rem;
     width: 70rem;
     border: 0.1rem solid black;
+    border-collapse: collapse;
+    box-shadow: 0.5rem,royalblue;
+    font-size: large;
+    font-weight: bold;
+}
+
+@keyframes changeColor{
+    25% {color: aqua;}
+    75% {color: blueviolet;}
 }
